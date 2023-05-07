@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <title>T5_Vue_2114311029</title>
+</head>
+<body>
+    <div id="app">
+        <table  cellspacing="20" >
+            <tr v-if="hide">
+                <td><img v-bind:src="image" v-bind:alt="alt"></td>
+                <td>
+                    <h1>{{nama}}</h1>
+                    <h3>{{NIM}}</h3>
+                    <p>{{bio}}</p>
+                </td>
+                <td>
+                    <br>
+                    
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button v-on:click="hideContent">Hide</button>
+                </td>
+                
+            </tr>
+        </table>
+    </div>
+    <!-- import JS -->
+    <script src="main.js"></script>
+    <!-- mount app  -->
+    <script>
+        const mountedApp = app.mount("#app")
+    </script>
+</body>
+</html>
