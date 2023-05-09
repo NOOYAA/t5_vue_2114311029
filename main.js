@@ -3,20 +3,22 @@ const app = Vue.createApp({
         return {
             nama: "Rafi Noor Islami",
             NIM: "2114311029",
-            image: "WhatsApp Image 2023-04-29 at 11.20.26 PM-modified.png",
+            image: "assets/images/WhatsApp Image 2023-04-29 at 11.20.26 PM-modified.png",
             alt: "Rafi Photo",
             bio: "Hello👋",
-            hide: true
+            existence: true,
+            label: "hide"
         }
     },
     methods: {
-        hideContent() {
-            if (this.hide == true) {
-                this.hide = false 
+        existenceContent() {
+            if (this.existence == true) {
+                this.existence = false,
+                this.label = "Show"
             } else {
-                this.hide = true
+                this.existence = true,
+                this.label = "Hide"
             }
         }
-        
     }
 })
