@@ -8,7 +8,7 @@
 <body>
     <div id="app">
         <table  cellspacing="20" >
-            <tr v-if="hide">
+            <tr v-if="existence">
                 <td><img v-bind:src="image" v-bind:alt="alt"></td>
                 <td>
                     <h1>{{nama}}</h1>
@@ -22,7 +22,7 @@
             </tr>
             <tr>
                 <td>
-                    <button v-on:click="hideContent">{{button_cond}}</button>
+                    <button v-on:click="existenceContent">{{label}}</button>
                 </td>
                 
             </tr>
